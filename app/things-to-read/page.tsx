@@ -1,6 +1,4 @@
 // app/things-to-read/page.tsx
-import Link from 'next/link';
-
 export default function ThingsToRead(): JSX.Element {
   const links: { name: string; url: string }[] = [
     { name: 'The Sill – Plant Care Library', url: 'https://www.thesill.com/pages/plant-care-library' },
@@ -16,12 +14,7 @@ export default function ThingsToRead(): JSX.Element {
   ];
 
   return (
-    <main className="p-6">
-      <nav className="mb-4">
-        <Link href="/" className="mr-4" tabIndex={0}>Home</Link>
-        <Link href="/things-to-read" tabIndex={0}>Things to Read</Link>
-      </nav>
-
+    <>
       <h1 className="text-2xl font-bold mb-4">Things to Read</h1>
       <ul className="list-disc pl-6 space-y-2">
         {links.map(({ name, url }, i) => (
@@ -38,7 +31,6 @@ export default function ThingsToRead(): JSX.Element {
           </li>
         ))}
       </ul>
-    </main>
+    </>
   );
 }
-
