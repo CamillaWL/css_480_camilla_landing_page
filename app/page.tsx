@@ -25,7 +25,8 @@ export default function Home() {
         </h1>
 
         <p className="text-lg text-center text-green-900 mb-8">
-          Hi! I’m Camilla — an Applied Computing student who’s into biology, brain stuff, and plant life. This is my happy little space to share my passions 🌱
+          Hi! I’m Camilla — an Applied Computing student who’s into biology, brain stuff, and plant life. 
+          This is my happy little space to share my passions 🌱
         </p>
 
         {/* Profile Picture */}
@@ -61,6 +62,23 @@ export default function Home() {
           >
             🔀 Shuffle My Interests
           </button>
+        </div>
+
+        {/* Keyboard Access Instructions */}
+        <div className="mt-12 bg-green-100 p-6 rounded-lg shadow-sm">
+          <h2 className="text-xl font-semibold text-green-800 mb-2">🎹 Keyboard Navigation Help</h2>
+          <p className="text-green-900 mb-2">
+            This website is fully keyboard accessible. You can navigate and interact with everything using only your keyboard:
+          </p>
+          <ul className="list-disc list-inside text-green-800 space-y-1">
+            <li>Use <strong>Tab</strong> to move forward through buttons and links</li>
+            <li>Use <strong>Shift + Tab</strong> to move backward</li>
+            <li>Press <strong>Enter</strong> to activate any button or link</li>
+          </ul>
+          <p className="mt-3 text-green-900">
+            <strong>Keyboard usability features I focused on:</strong>  
+            Making sure everything is reachable using Tab, interactive elements have visible focus outlines, and the order of navigation is logical and friendly.
+          </p>
         </div>
       </div>
     </main>
