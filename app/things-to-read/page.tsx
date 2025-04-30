@@ -15,23 +15,14 @@ export default function ThingsToRead() {
   ];
 
   return (
-    <>
-      <h1 className="text-2xl font-bold mb-4">Things to Read</h1>
-      <ul className="list-disc pl-6 space-y-2">
-        {links.map(({ name, url }, i) => (
-          <li key={i}>
-            <a
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-              tabIndex={0}
-              className="text-blue-600 underline focus:outline focus:outline-2 focus:outline-blue-400"
-            >
-              {name}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </>
-  );
-}
+    <main className="min-h-screen bg-gradient-to-b from-green-50 to-white text-gray-800 font-sans">
+      <div className="max-w-3xl mx-auto px-6 py-12">
+        <h1 className="text-4xl font-extrabold text-center text-green-800 mb-6">
+          🌱 Things to Read
+        </h1>
+
+        <p className="text-center text-gray-700 mb-8">
+          Here are some curated links based on my favorite topics — plants, health, cooking, and biology.
+        </p>
+
+        <div className="bg-white shadow-md rounded-xl p-6 space-y
