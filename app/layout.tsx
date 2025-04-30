@@ -1,4 +1,3 @@
-// app/layout.tsx
 import './globals.css';
 import Link from 'next/link';
 import { ReactNode } from 'react';
@@ -8,7 +7,7 @@ export const metadata = {
   description: 'Welcome to my site!',
 };
 
-export default function RootLayout({ children }: { children: ReactNode }): JSX.Element {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
