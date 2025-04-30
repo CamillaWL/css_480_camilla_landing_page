@@ -1,29 +1,59 @@
+'use client';
+
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function Home() {
-  return (
-    <>
-      <h1 className="text-3xl font-bold">Hi! Welcome to my site</h1>
-      <p className="mt-2">I'm Camilla, an Applied Computing student who loves biology, plants, and cooking.</p>
+  const [interests, setInterests] = useState([
+    'Biology',
+    'Plants',
+    'Cooking',
+    'Working Out',
+    'Reading',
+  ]);
 
-      <div className="my-6">
+  const shuffleInterests = () => {
+    const shuffled = [...interests].sort(() => Math.random() - 0.5);
+    setInterests(shuffled);
+  };
+
+  return (
+    <section className="max-w-3xl mx-auto px-6 py-12">
+      <h1 className="text-4xl font-bold mb-4 text-center">Welcome to My Site</h1>
+
+      <p className="text-lg text-center mb-6">
+        Hi, I'm Camilla — an Applied Computing student who loves exploring biology, cooking, and all things green.
+      </p>
+
+      {/* Profile Image */}
+      <div className="flex justify-center mb-8">
         <Image
           src="/profile.jpg"
           alt="Camilla's profile photo"
-          width={300}
-          height={300}
-          className="rounded-xl shadow-lg"
+          width={200}
+          height={200}
+          className="rounded-full border-4 border-blue-300 shadow-md"
         />
       </div>
 
-      <h2 className="text-xl font-semibold mt-4">My Interests</h2>
-      <ul className="list-disc pl-6 mt-2">
-        <li tabIndex={0}>Biology</li>
-        <li tabIndex={0}>Plants</li>
-        <li tabIndex={0}>Cooking</li>
-        <li tabIndex={0}>Working Out</li>
-        <li tabIndex={0}>Reading</li>
-      </ul>
-    </>
+      {/* Interests List */}
+      <div className="text-center">
+        <h2 className="text-2xl font-semibold mb-4">Things I'm Into</h2>
+        <ul className="list-disc list-inside mb-4 text-left inline-block">
+          {interests.map((item, index) => (
+            <li key={index} tabIndex={0} className="focus:outline focus:outline-2 focus:outline-blue-500">
+              {item}
+            </li>
+          ))}
+        </ul>
+
+        <button
+          onClick={shuffleInterests}
+          className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline focus:outline-2 focus:outline-yellow-400"
+        >
+          Shuffle Interests
+        </button>
+      </div>
+    </section>
   );
 }
