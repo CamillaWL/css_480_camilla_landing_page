@@ -2,13 +2,13 @@
 
 export default function ThingsToRead() {
   const links: { name: string; url: string; emoji: string }[] = [
-    { name: 'The Sill – Plant Care Library', url: 'https://www.thesill.com/pages/plant-care-library', emoji: '🌱' },
+    { name: 'The Sill – Plant Care Library', url: 'https://www.thesill.com', emoji: '🌱' },
     { name: 'Missouri Botanical Garden', url: 'https://www.missouribotanicalgarden.org/', emoji: '🌿' },
     { name: 'Healthline – Nutrition', url: 'https://www.healthline.com/nutrition', emoji: '🍎' },
     { name: 'Mayo Clinic – Healthy Living', url: 'https://www.mayoclinic.org/healthy-lifestyle', emoji: '🧘‍♀️' },
     { name: 'Bon Appétit Recipes', url: 'https://www.bonappetit.com/recipes', emoji: '🥗' },
-    { name: 'Serious Eats – Guides', url: 'https://www.seriouseats.com/techniques', emoji: '🍳' },
-    { name: 'NatGeo – Biology', url: 'https://www.nationalgeographic.com/science/biology', emoji: '🧬' },
+    { name: 'Serious Eats – Guides', url: 'https://www.seriouseats.com', emoji: '🍳' },
+    { name: 'NatGeo – Biology', url: 'https://www.nationalgeographic.com', emoji: '🧬' },
     { name: 'Khan Academy – Biology', url: 'https://www.khanacademy.org/science/biology', emoji: '🔬' },
     { name: 'House Plant Journal Blog', url: 'https://www.houseplantjournal.com/blogs/blog', emoji: '🪴' },
     { name: 'Harvard Health Blog', url: 'https://www.health.harvard.edu/blog', emoji: '🧠' },
