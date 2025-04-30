@@ -1,3 +1,5 @@
+// trigger rebuild
+
 import './globals.css';
 import Link from 'next/link';
 import { ReactNode } from 'react';
