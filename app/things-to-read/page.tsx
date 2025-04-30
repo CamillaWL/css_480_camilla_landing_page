@@ -25,4 +25,24 @@ export default function ThingsToRead() {
           Here are some curated links based on my favorite topics — plants, health, cooking, and biology.
         </p>
 
-        <div className="bg-white shadow-md rounded-xl p-6 space-y
+        <div className="bg-white shadow-md rounded-xl p-6 space-y-4">
+          <ul className="list-disc list-inside space-y-3 text-blue-700 text-lg">
+            {links.map(({ name, url }, i) => (
+              <li key={i}>
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  tabIndex={0}
+                  className="underline hover:text-blue-900 focus:outline focus:outline-2 focus:outline-blue-400"
+                >
+                  {name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </main>
+  );
+}
