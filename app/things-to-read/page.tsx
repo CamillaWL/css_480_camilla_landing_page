@@ -1,5 +1,6 @@
-// app/things-to-read/page.tsx
-export default function ThingsToRead(): JSX.Element {
+'use client';
+
+export default function ThingsToRead() {
   const links: { name: string; url: string }[] = [
     { name: 'The Sill – Plant Care Library', url: 'https://www.thesill.com/pages/plant-care-library' },
     { name: 'Missouri Botanical Garden', url: 'https://www.missouribotanicalgarden.org/' },
