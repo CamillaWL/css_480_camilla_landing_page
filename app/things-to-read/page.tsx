@@ -15,13 +15,13 @@ export default function ThingsToRead() {
   ];
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-green-50 via-lime-50 to-white text-gray-800 font-sans">
+    <main className="min-h-screen bg-gradient-to-b from-sky-100 via-white to-white text-slate-800 font-sans">
       <div className="max-w-4xl mx-auto px-6 py-12">
-        <h1 className="text-4xl font-extrabold text-center text-green-800 mb-6">
+        <h1 className="text-4xl font-extrabold text-center text-teal-800 mb-6">
           📚 Things to Read
         </h1>
 
-        <p className="text-center text-green-900 mb-10">
+        <p className="text-center text-slate-800 mb-10">
           Here’s a list of science-y, nature-y, and health-y links I think are worth checking out 🍃
         </p>
 
@@ -33,10 +33,10 @@ export default function ThingsToRead() {
               target="_blank"
               rel="noopener noreferrer"
               tabIndex={0}
-              className="bg-white p-4 rounded-lg shadow-sm border border-green-200 hover:shadow-md focus:outline focus:outline-2 focus:outline-green-400 transition-all"
+              className="bg-white p-4 rounded-lg shadow-sm border border-sky-200 hover:shadow-md focus:outline focus:outline-2 focus:outline-sky-400 transition-all"
             >
               <div className="text-2xl mb-2">{emoji}</div>
-              <p className="text-green-800 font-medium">{name}</p>
+              <p className="text-teal-700 font-medium">{name}</p>
             </a>
           ))}
         </div>
