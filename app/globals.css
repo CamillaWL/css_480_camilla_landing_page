@@ -2,10 +2,10 @@
 
 /* ===== Root Theme Colors ===== */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --link: #1e40af; /* Tailwind blue-800 */
-  --link-hover: #1d4ed8; /* Tailwind blue-700 */
+  --background: #e0f2fe;   /* Tailwind sky-100 */
+  --foreground: #0f172a;   /* Tailwind slate-900 */
+  --link: #1e40af;         /* Tailwind blue-800 */
+  --link-hover: #1d4ed8;   /* Tailwind blue-700 */
   --link-visited: #6b21a8; /* Tailwind purple-800 */
 }
 
@@ -16,18 +16,16 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* ===== Dark Mode Theme ===== */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --link: #60a5fa; /* Tailwind blue-400 */
-    --link-hover: #93c5fd; /* Tailwind blue-300 */
-    --link-visited: #c084fc; /* Tailwind purple-400 */
+    --link: #60a5fa;        /* Tailwind blue-400 */
+    --link-hover: #93c5fd;  /* Tailwind blue-300 */
+    --link-visited: #c084fc;/* Tailwind purple-400 */
   }
 }
 
-/* ===== Base Styles ===== */
 body {
   background-color: var(--background);
   color: var(--foreground);
