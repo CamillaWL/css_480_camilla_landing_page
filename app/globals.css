@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
+/* ===== Root Theme Colors ===== */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --link: #1e40af; /* Tailwind blue-800 */
+  --link-hover: #1d4ed8; /* Tailwind blue-700 */
+  --link-visited: #6b21a8; /* Tailwind purple-800 */
 }
 
 @theme inline {
@@ -12,17 +16,39 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* ===== Dark Mode Theme ===== */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --link: #60a5fa; /* Tailwind blue-400 */
+    --link-hover: #93c5fd; /* Tailwind blue-300 */
+    --link-visited: #c084fc; /* Tailwind purple-400 */
   }
 }
 
+/* ===== Base Styles ===== */
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* ===== Link Styles ===== */
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--link-visited);
 }
 
 /* ===== Keyboard Focus Styles ===== */
@@ -32,4 +58,3 @@ li:focus {
   outline: 2px solid #3b82f6; /* Tailwind blue-500 */
   outline-offset: 2px;
 }
-
