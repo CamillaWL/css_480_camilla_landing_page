@@ -24,6 +24,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           >
             Things to Read
           </Link>
+          <Link
+            href="/neuroaesthetics"
+            className="text-blue-800 font-medium hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
+          >
+            Neuroaesthetics
+          </Link>
         </nav>
         <main>{children}</main>
       </body>
