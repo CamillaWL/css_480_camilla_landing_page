@@ -16,7 +16,7 @@ export default function NeuroaestheticsPage() {
             respond to art, design, and beauty.
           </p>
           <img
-            src="/images/neuroaesthetics-brain.png"
+            src="/neuroaesthetics-brain.png"
             alt="Brain response to art"
             className="rounded-xl shadow-lg my-6 w-full"
           />
@@ -29,7 +29,7 @@ export default function NeuroaestheticsPage() {
             amygdala and prefrontal cortex.
           </p>
           <img
-            src="/images/emotional-brain.png"
+            src="/emotional-brain.png"
             alt="Brain regions responsible for emotion"
             className="rounded-xl shadow-lg my-6 w-full"
           />
@@ -42,7 +42,7 @@ export default function NeuroaestheticsPage() {
             for dementia and PTSD.
           </p>
           <img
-            src="/images/mri-scan.jpg"
+            src="/mri-scan.jpg"
             alt="MRI scan of human brain"
             className="rounded-xl shadow-lg my-6 w-full"
           />
