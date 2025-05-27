@@ -1,64 +1,63 @@
-import Image from 'next/image';
-
 export default function NeuroaestheticsPage() {
   return (
-    <main className="text-gray-800">
+    <main className="bg-white text-slate-900 font-sans">
       <header className="bg-gradient-to-r from-gray-700 to-pink-500 text-white text-center py-12 px-6">
         <h1 className="text-4xl font-bold">Neuroaesthetics</h1>
-        <p className="text-lg mt-2">Exploring the Connection Between Art and the Human Brain</p>
+        <p className="text-lg mt-2">
+          Exploring the Connection Between Art and the Human Brain
+        </p>
       </header>
 
-      <div className="max-w-3xl mx-auto px-4 py-10 space-y-16">
+      <div className="max-w-3xl mx-auto px-4 py-12 space-y-16">
         <section>
-          <h2 className="text-2xl font-semibold text-pink-500 mb-2">What is Neuroaesthetics?</h2>
+          <h2 className="text-2xl font-semibold text-pink-600 mb-4">What is Neuroaesthetics?</h2>
           <p>
-            Neuroaesthetics is a field that studies how our brains react to art and design.
-            It blends neuroscience, psychology, and art theory to understand how beauty affects emotions and memory.
+            Neuroaesthetics is a scientific field that studies how our brains
+            respond to art, design, and beauty. It brings together neuroscience,
+            psychology, and the arts to understand how aesthetics influence our
+            thoughts, emotions, and behaviors.
           </p>
-          <Image
-            src="https://upload.wikimedia.org/wikipedia/commons/4/48/Neuroimaging_in_aesthetic_experience.png"
-            alt="Brain response to art"
-            width={800}
-            height={500}
-            className="rounded-xl shadow-lg mt-4"
+          <img
+            src="https://miro.medium.com/v2/resize:fit:1200/format:webp/1*WZ5uEJ6Yz1aV1Zf5n0F4Vg.jpeg"
+            alt="Neuroaesthetics concept art"
+            className="rounded-xl shadow-lg my-6 w-full"
           />
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-pink-500 mb-2">The Brain on Art</h2>
+          <h2 className="text-2xl font-semibold text-pink-600 mb-4">The Emotional Brain</h2>
           <p>
-            Viewing art activates the brain’s reward systems, much like music, food, or love.
-            Studies show art lowers stress and stimulates emotional and visual centers in the brain.
+            When we see something beautiful, it activates areas in our brain
+            related to reward, emotion, and memory. This includes the amygdala,
+            prefrontal cortex, and orbitofrontal cortex — all of which light up
+            when we engage with meaningful visuals.
           </p>
-          <Image
-            src="https://upload.wikimedia.org/wikipedia/commons/0/05/Emotion_Processing_in_the_Brain.png"
-            alt="Brain emotion areas"
-            width={800}
-            height={500}
-            className="rounded-xl shadow-lg mt-4"
+          <img
+            src="https://karengosling.com/wp-content/uploads/2014/10/Emotional-Brain.jpg"
+            alt="Brain emotion diagram"
+            className="rounded-xl shadow-lg my-6 w-full"
           />
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-pink-500 mb-2">Art as Cognitive Exercise</h2>
+          <h2 className="text-2xl font-semibold text-pink-600 mb-4">Art and Brain Health</h2>
           <p>
-            Engaging with art boosts memory, empathy, and attention.
-            That’s why art therapy is often used with patients experiencing cognitive decline.
+            Studies show that making or viewing art can reduce stress and
+            improve focus. Art therapy is now used to support people with
+            anxiety, dementia, and trauma. Even observing art passively can
+            increase dopamine — the brain's \"feel-good\" chemical.
           </p>
-          <Image
-            src="https://upload.wikimedia.org/wikipedia/commons/e/ee/MRI_scan_human_head_side_view.jpg"
-            alt="MRI brain scan"
-            width={800}
-            height={500}
-            className="rounded-xl shadow-lg mt-4"
+          <img
+            src="https://theodc.net/wp-content/uploads/2019/07/MRI-Scan.jpg"
+            alt="MRI scan of human brain"
+            className="rounded-xl shadow-lg my-6 w-full"
           />
         </section>
       </div>
 
-      <footer className="bg-gray-100 text-center text-sm text-gray-500 py-4">
+      <footer className="bg-gray-100 text-center text-sm text-gray-500 py-6">
         Created by Camilla Lindberg | CSS 480 Project
       </footer>
     </main>
   );
 }
-
